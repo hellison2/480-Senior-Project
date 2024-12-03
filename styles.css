@@ -49,6 +49,19 @@ table {
 }
 /* END CSS RESET */
 
+/* COLORS */
+:root{
+	--blue: #499BD2;
+	--darkest-brown: #1D110A;
+  }
+/* END COLORS */
+
+/* BODY */
+body {
+	color: var(--darkest-brown);
+}
+/* END BODY */
+
 /* DARK MODE */
 /* END DARK MODE */
 
@@ -56,12 +69,32 @@ table {
 /* END HEADER */
 
 /* MENU */
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	text-align: right;
+}
+
+nav h2 {
+	visibility: hidden;
+}
+
+nav li {
+	display: inline-block;
+	padding: 50px;
+}
+
+nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
 /* END MENU */
 
-/* BODY */
-/* END BODY */
-
 /* HOME PAGE */
+.basic-text {
+	justify-content: center;
+}
 /* END HOME PAGE */
 
 /* DISCOVER PAGE */
