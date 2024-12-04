@@ -66,11 +66,14 @@ body {
 /* END DARK MODE */
 
 /* HEADER */
+h1 {
+	visibility: hidden;
+}
 /* END HEADER */
 
 /* MENU */
 nav {
-	position: fixed;
+	position: relative;
 	top: 0;
 	width: 100%;
 	text-align: right;
@@ -83,6 +86,7 @@ nav h2 {
 nav li {
 	display: inline-block;
 	padding: 50px;
+	margin-right: 70px;
 }
 
 nav a {
@@ -93,7 +97,13 @@ nav a {
 
 /* HOME PAGE */
 .basic-text {
-	justify-content: center;
+	display: flexbox;
+	text-align: center;
+	padding: 5% 20%;
+}
+
+.basic-text p {
+	padding-top: 1%;
 }
 /* END HOME PAGE */
 
@@ -104,6 +114,45 @@ nav a {
 /* END LISTINGS PAGE */
 
 /* INDIVIDUAL LISTINGS PAGES */
+.listing-name {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+}
+
+.listing-gallery {
+
+}
+.listing-container-one {
+	display: flex;
+}
+
+.listing-basic-info {
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+	width: 25%;
+	padding-left: 10%;
+}
+
+#hours-phone-address {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10%;
+}
+
+#hours-phone-address p {
+	text-align: left;
+}
+
+.listing-description {
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+	width: 75%;
+	padding-right: 10%;
+	padding-left: 10%;
+}
 /* END INDIVIDUAL LISTINGS PAGES */
 
 /* ABOUT PAGE */
