@@ -92,7 +92,7 @@ dt {
 	font-weight: 500;
 }
 
-p, dd {
+p, dd, button {
 	font-size: medium;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
@@ -155,10 +155,84 @@ nav a:hover {
 .basic-text p {
 	padding-top: 1%;
 }
-/* END HOME PAGE */
 
-/* DISCOVER PAGE */
-/* END DISCOVER PAGE */
+#home-listings {
+	display: block;
+	padding: 50px 0;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	background-color: var(--light);
+}
+
+.scroll-container {
+	display: flex; 
+	height: 225px;
+	width: 90%;
+    overflow-x: auto; 
+    overflow-y: hidden; 
+	white-space: nowrap;
+	background-color: var(--light);
+	margin: auto;
+}
+
+.preview-listing {
+	display: flex;
+	width: 600px;
+	background-color: var(--medium);
+	border: 2px solid var(--darker);
+	border-radius: 5px;
+	margin: 10px;
+	z-index: 2;
+}
+
+.preview-listing img {
+	width: 200px;
+	height: auto;
+	margin: 5px;
+}
+
+.preview-listing div {
+	text-align: left;
+	padding: 20px;
+	max-width: fit-content;
+}
+
+.preview-listing a {
+	text-decoration: none;
+	color: black;
+}
+
+#home-listings button, .basic-text button {
+	margin-top: 30px;
+}
+
+#home-listings button a {
+	text-decoration: none;
+	color: white;
+}
+
+button {
+	padding: 15px 20px;
+	background-color: var(--darker);
+	color: white;
+	font-size: small;
+	border: 2px solid var(--darker);
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: var(--dark);
+	color: black;
+}
+
+#home-bottom {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 90%;
+	margin: auto;
+}
+/* END HOME PAGE */
 
 /* LISTINGS PAGE */
 /* END LISTINGS PAGE */
@@ -226,6 +300,11 @@ nav a:hover {
 	gap: 10%;
 }
 
+#hours-phone-address div {
+	padding: 20px;
+	width: 100%;
+}
+
 #hours-phone-address p {
 	text-align: left;
 }
@@ -239,19 +318,31 @@ nav a:hover {
 	padding-left: 10%;
 	padding-top: 30px;
 }
-/* END INDIVIDUAL LISTINGS PAGES */
 
-/* ABOUT PAGE */
-/* END ABOUT PAGE */
+.listing-categories {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	padding: 30px;
+}
+
+.listing-categories dl {
+	background-color: var(--light);
+	padding: 30px;
+	border: 1px solid var(--darker)
+}
+
+.listing-categories dt {
+	background-color: var(--lighter);
+	padding: 20px;
+}
+/* END INDIVIDUAL LISTINGS PAGES */
 
 /* CONTACT PAGE */
 /* END CONTACT PAGE */
 
 /* FOOTER */
+footer {
+	background-color: var(--medium);
+}
 /* END FOOTER */
-
-/* MISCELLANEOUS BUTTONS & ACTIONS */
-/* END MISCELLANEOUS */
-
-/* MEDIA QUERIES */
-/* END MEDIA QUERIES */
