@@ -13,7 +13,9 @@ function showItems(n) {
     let i;
     let items = document.getElementsByClassName("items");
     if (n > items.length) {itemIndex = 1}
+    
     if (n < 1) {itemIndex = items.length}
+    
     for (i = 0; i < items.length; i++) {
         items[i].style.display = "none";
     }
