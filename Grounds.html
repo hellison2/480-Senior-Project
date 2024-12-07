@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Vena Ellison">
+        
+        <title>GIT 480 Senior Project</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Best Coffee In Town!</h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="listings.html">Listings</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="listing-name">
+                <h2>Grounds on 2nd</h2>
+            </section>
+
+            <section class="listing-gallery">                
+                <ul data-items>
+                    <li class="items">
+                        <img src="images/Grounds/Grounds1.jpg" alt="The Grounds logo.">
+                    </li>
+
+                    <li class="items">
+                        <img src="images/Grounds/Grounds2.jpg" alt="Couches with plants hanging above.">
+                    </li>
+
+                    <li class="items">
+                        <img src="images/Grounds/Grounds3.jpg" alt="Low-light bulbs.">
+                    </li>
+
+                    <li class="items">
+                        <img src="images/Grounds/Grounds5.jpg" alt="A welcome poster.">
+                    </li>
+
+                    <li class="items">
+                        <img src="images/Grounds/Grounds6.jpg" alt="Cafe seating with wall decorations.">
+                    </li>
+
+                    <li class="items">
+                        <img src="images/Grounds/Grounds7.jpg" alt="A beer and wine case.">
+                    </li>
+
+                    <li class="items">
+                        <img src="images/Grounds/Grounds11.jpg" alt="A close up of a coffee bag.">
+                    </li>
+
+                    <li class="items">
+                        <img src="images/Grounds/Grounds12.jpg" alt="A shelf of coffee.">
+                    </li>
+
+                    <li class="items">
+                        <img src="images/Grounds/Grounds13.jpg" alt="A shelf of goodies.">
+                    </li>
+
+                    <li class="items">
+                        <img src="images/Grounds/Grounds14.jpg" alt="A wake and bake neon sign.">
+                    </li>
+
+                    <li class="items">
+                        <img src="images/Grounds/Grounds15.jpg" alt="A goat wall art.">
+                    </li>
+
+                    <li class="items">
+                        <img src="images/Grounds/Grounds16.jpg" alt="An outdoor view of Grounds.">
+                    </li>
+
+                    <li class="items">
+                        <img src="images/Grounds/Grounds18.jpg" alt="A banner of the Grounds logo.">
+                    </li>
+
+                    <li class="items">
+                        <img src="images/Grounds/Grounds19.jpg" alt="A close up of a chess set.">
+                    </li>
+
+                    <li class="items">
+                        <img src="images/Grounds/Grounds20.jpg" alt="An order here neon sign.">
+                    </li>
+
+                    <li class="items">
+                        <img src="images/Grounds/Grounds21.jpg" alt="A close up of some plants overhanging a counter.">
+                    </li>
+
+                    <li class="items">
+                        <img src="images/Grounds/Grounds22.jpg" alt="A close up of a pastries case.">
+                    </li>
+                </ul>
+
+                <button class="prev" onclick="plusItems(-1)">&#8678;</button>
+                <button class="next" onclick="plusItems(1)">&#8680;</button>
+            </section>
+
+            <div class="listing-container-one">
+                <section class="listing-basic-info">
+                    <button>Website</button>
+    
+                    <button>Menu</button>
+                    
+                    <div id="hours-phone-address">
+                        <div>
+                            <h4>Hours</h4>
+
+                            <p>
+                                Monday-Saturday: 7a-8p
+                                <br>
+                                Sunday: 7a-1p
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4>Address</h4>
+
+                            <p>3703 N 69th St #1, Scottsdale, AZ 85251</p>
+                        </div>
+
+                        <div>
+                            <h4>Phone</h4>
+
+                            <p>1-480-590-6489</p>
+                        </div>
+                    </div>
+    
+                    <button>Social Media</button>
+                </section>
+    
+                <section class="listing-description">
+                    <h3>Description</h3>
+                    
+                    <p>
+                        Grounds on 2nd is a neighborhood coffee shop, beer and wine tasting cafe, and local market. This cafe features low lighting with plants and local art decorating the space. 
+                        <br>
+                        They offer various coffees, wines, beers, and teas, along with a tasty breakfast and lunch menu. This cafe is situated in a quiet neighborhood in Scottdale on the corner of N 69th St and E 2nd St. It's a bit of an out-of-the-way hidden gem, but one that's worth the visit. 
+                        <br>
+                        Grounds on 2nd seems to attract people of all cultures and ages. It's not uncommon to meet tourists and travelers there, as well as groups of people coming to hang out or the lone computer dweller.  
+                    </p>
+                </section>
+            </div>
+
+            <section class="listing-categories">
+                <dl>
+                    <dt>Coffee:</dt>
+                    <dd>Some of the best good iced and cold lattes in Phoenix. They also offer beers and wines.</dd>
+                </dl>
+
+                <dl>
+                    <dt>Food:</dt>
+                    <dd>The cafe has a breakfast & lunch menu with high-quality, fresh food.</dd>
+                </dl>
+
+                <dl>
+                    <dt>Wifi:</dt>
+                    <dd>The wifi is easily accessible, the password is easy to find and on display within the shop. The wifi works quickly and consistently, it reaches all indoor and outdoor seating with ease, and is great to work on.</dd>
+                </dl>
+
+                <dl>
+                    <dt>Seating:</dt>
+                    <dd>Wide variety of seating, including couches, tables, and bar stools. The seating is spaced out well, but there is not a lot of seating. This usually isn't a problem as this is a smaller cafe with a seemingly smaller audience.</dd>
+                </dl>
+
+                <dl>
+                    <dt>Atmosphere & Aesthetic:</dt>
+                    <dd>The atmosphere is intimate, a little dark, and comfortable. The baristas are really personable, and the decor makes you feel like you're dining in your own backyard. The outdoor area is also really nice; even though it's next to a road, there isn't much road, and the greenery around the cafe helps create a sense of seclusion.</dd>
+                </dl>
+
+                <dl>
+                    <dt>Parking:</dt>
+                    <dd>Parking can be a little confusing; there is free street parking in the front of the cafe, but this is limited to about three spots. If there is more parking at this cafe, it is difficult to find.</dd>
+                </dl>
+
+                <dl>
+                    <dt>Bathroom:</dt>
+                    <dd>They offer one single-stall bathroom that is clean and has plants for air quality and decor.</dd>
+                </dl>
+
+                <dl>
+                    <dt>Music:</dt>
+                    <dd>The music playlists seem to have a wide variety of genres, but all songs carry a lowkey, peaceful vibe. The genres usually range from hip-hop to jazz to indie/folk music.</dd>
+                </dl>
+
+                <dl>
+                    <dt>Creativity:</dt>
+                    <dd>This cafe has a lot of unique artwork and knick-knacks scattered throughout the shop. The use of greenery and plants to decorate is also very impressive.</dd>
+                </dl>
+
+                <dl>
+                    <dt>Open Late:</dt>
+                    <dd>Yes</dd>
+                </dl>
+
+                <dl>
+                    <dt>Order Online:</dt>
+                    <dd>Unknown</dd>
+                </dl>
+
+                <dl>
+                    <dt>Charging Available:</dt>
+                    <dd>Yes</dd>
+                </dl>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 
+                Best Coffee In Town! 2024
+            </p>
+        </footer>
+    </body>
+</html>
