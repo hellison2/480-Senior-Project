@@ -18,76 +18,55 @@
 
     <body>
         <header>
-            <h1>Contact</h1>
+            <h1>Best Coffee In Town!</h1>
             
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#discover.html">Discover</a></li>
-                    <li><a href="#listings.html">Listings</a></li>
-                    <li><a href="#about.html">About</a></li>
-                    <li><a href="#contact.html">Contact</a></li>
+                    <li><a href="listings.html">Listings</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section class="contact-us">
+            <section class="basic-text">
+                <h2>Contact Us Below</h2>
+                
                 <p>
                     Want to get in touch? You can use the contact form below to reach out. Just add your name, preferred contact method, and message below, and we’ll reach out to you as soon as possible. 
                 </p>
 
                 <form>
-                    <label for="fullname">Full Name<span class="required">*</span></label>
-                    <input type="text" id="fullname" name="fullname" required>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
                     
-                    <label for="email">Email<span class="required">*</span></label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
                     
-                    <label for="tel">Phone<span class="required">*</span></label>
-                    <input type="tel" id="tel" name="tel" required>
-                    
-                    <fieldset>
-                        <legend>Preferred Contact Method<span class="required">*</span></legend>
-                        <input type="radio" id="phone" name="phone">
-                        <label for="phone">Phone</label>
-                        
-                        <input type="radio" id="email" name="email">
-                        <label for="email">Email</label>
-                    </fieldset>
-                    
-                    <label for="message">Message<span class="required">*</span></label>
+                    <label for="message">What can we help you with?</label>
                     <textarea id="message" name="message"></textarea>
                     
                     <input type="submit" value="Submit">
                 </form>
             </section>
 
-            <section>
+            <section class="basic-text">
+                <h2>Add A Listing</h2>
+                
                 <p>
                     Want to add or change a listing on our website? You can use the “Add A Listing” form to add your shop to our queue. Just add your shop’s name, address, and why you want to be included or what change you’d like to see made and we’ll get back to you with feedback shortly!
                 </p>
 
                 <form>
-                    <label for="fullname">Full Name<span class="required">*</span></label>
+                    <label for="fullname">Full Name</label>
                     <input type="text" id="fullname" name="fullname" required>
                     
-                    <label for="email">Email<span class="required">*</span></label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
                     
-                    <label for="tel">Phone<span class="required">*</span></label>
-                    <input type="tel" id="tel" name="tel" required>
-                    
-                    <fieldset>
-                        <legend>Preferred Contact Method<span class="required">*</span></legend>
-                        <input type="radio" id="phone" name="phone">
-                        <label for="phone">Phone</label>
-                        
-                        <input type="radio" id="email" name="email">
-                        <label for="email">Email</label>
-                    </fieldset>
-                    
-                    <label for="message">Message<span class="required">*</span></label>
+                    <label for="message">Message</label>
                     <textarea id="message" name="message"></textarea>
                     
                     <input type="submit" value="Submit">
@@ -97,7 +76,9 @@
         </main>
 
         <footer>
-
+            <p>&copy; 
+                Best Coffee In Town! 2024
+            </p>
         </footer>
     </body>
 </html>

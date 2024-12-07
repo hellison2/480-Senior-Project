@@ -92,7 +92,7 @@ dt {
 	font-weight: 500;
 }
 
-p, dd, button {
+p, dd, button, label, input, textarea {
 	font-size: medium;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
@@ -107,7 +107,14 @@ p, dd, button {
 
 /* HEADER */
 h1 {
-	visibility: hidden;
+	position: absolute;
+	top: 55px;
+	left: 50px;
+	z-index: 10;
+	font-size: xx-large;
+	font-family: 'Monda', sans-serif;
+	font-weight: 900;
+	color: var(--lighter);
 }
 /* END HEADER */
 
@@ -119,6 +126,7 @@ nav {
 	text-align: right;
 	background-color: var(--medium);
 	color: white;
+	z-index: 5;
 }
 
 nav h2 {
@@ -135,7 +143,10 @@ nav a {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: white;
-	padding: 50px;
+	padding: 45px 30px;
+	font-size: large;
+	font-family: 'Monda', sans-serif;
+	font-weight: 600;
 }
 
 nav a:hover {
@@ -221,20 +232,74 @@ button {
 	border-radius: 5px;
 }
 
-button:hover {
+button:hover, input[type=submit]:hover {
 	background-color: var(--dark);
 	color: black;
 }
 
 #home-bottom {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: inline-flex;
 	width: 90%;
+	margin: 0 50px;
+	padding: 20px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#home-contact, #home-add-listing {
+	padding: 50px;
+	margin: 20px;
+	background-color: var(--light);
+}
+
+#home-bottom button {
+	position: relative;
 	margin: auto;
+}
+
+#home-bottom button a {
+	text-decoration: none;
+	color: white;
 }
 /* END HOME PAGE */
 
 /* LISTINGS PAGE */
+#all-listings {
+	display: block;
+	margin: auto;
+}
+
+.single-listing {
+	display: inline-flex;
+	width: 90%;
+	background-color: var(--light);
+	border: 2px solid var(--darker);
+	border-radius: 5px;
+	margin-left: 4%;
+	margin-bottom: 10px;
+}
+
+.single-listing img {
+	width: 600px;
+	height: auto;
+	max-height: 800px;
+}
+
+.single-text {
+	text-align: left;
+	padding: 20px;
+}
+
+.single-listing button {
+	padding: 10px;
+}
+
+.single-listing button a {
+	text-decoration: none;
+	color: white;
+	padding: 175px 0;
+}
 /* END LISTINGS PAGE */
 
 /* INDIVIDUAL LISTINGS PAGES */
@@ -339,6 +404,52 @@ button:hover {
 /* END INDIVIDUAL LISTINGS PAGES */
 
 /* CONTACT PAGE */
+form{
+	display: block;
+	width: 40%;
+	padding: 50px;
+	margin: auto;
+	background-color: var(--light);
+	border: 2px solid var(--darker);
+	border-radius: 5px;
+	text-align: left;
+}
+
+input, label {
+	display: block;
+	width: 95%;
+}
+
+input[type=text] {
+	font-size: 1em;
+	padding: 5px;
+	border: 1px solid var(--dark);
+	border-radius: 5px;
+	height: 30px;
+	font-size: small;
+}
+
+textarea{
+	font-size: 1em;
+	padding: 5px;
+	border: 1px solid var(--dark);
+	border-radius: 5px;
+	height: 100px;
+	width: 95%;
+	font-size: small;
+}
+
+input[type=submit] {
+	padding: 15px 20px;
+	background-color: var(--darker);
+	color: white;
+	border: 2px solid var(--darker);
+	border-radius: 5px;
+}
+
+input:focus, textarea:focus{
+	border-color: var(--medium);
+}
 /* END CONTACT PAGE */
 
 /* FOOTER */
